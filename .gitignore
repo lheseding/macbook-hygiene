@@ -1,0 +1,25 @@
+# --- macOS ---
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon?
+._*
+.Spotlight-V100
+.Trashes
+.fseventsd
+
+# --- Editor / IDE ---
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# --- Projekt-Konventionen (macbook-hygiene) ---
+# Logs und Reports der Skripte
+*.log
+reports/
+tmp/
+
+# Lokale, nur für den Rechner gedachte Konfiguration
+config/*.local.*
