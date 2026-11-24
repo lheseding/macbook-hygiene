@@ -12,11 +12,14 @@
 - [ ] `scripts/check-security.sh` – FileVault, Firewall, Gatekeeper-Basics
 - [ ] `bin/macbook-hygiene` – Einstiegspunkt, bündelt Checks zu einem Report
 
-## Phase 3 – Aufräumen (dry-run first)
-- [ ] `scripts/clean-cache.sh` – User-/System-Caches mit Ausschlussliste
-- [ ] `scripts/clean-logs.sh` – rotierte Logs
+## Phase 3 – Aufräumen (dry-run first) – **teilweise erledigt, 24.11.2026**
+- [x] `scripts/remove-apps.sh` – Manifest-basiertes Entfernen in den Papierkorb (Dry-Run-Default, `--execute`, `--sudo`-Modus)
+- [x] `config/removal-plan.list.example` – Vorlage; persönliche Liste: `config/removal-plan.local.list` (gitignored)
+- [x] App-Diät 24.11.2026: Ollama-Modelle (9,2 GB), Gaming-Leichen, Adobe-User-Daten u. a. in den Papierkorb verschoben (siehe `reports/app-inventory-2026-11-24.md`)
+- [ ] Rest per `--sudo` (root-eigene Apps + Adobe-Systemdaten, ~19 GB) – manuell im Terminal
+- [ ] `scripts/clean-cache.sh` – Browser-/pip-/Updater-Caches mit Ausschlussliste
 - [ ] `scripts/clean-dev.sh` – `node_modules`/Build-Artefakte alter Projekte
-- [ ] Trash-basiertes Löschen statt `rm -rf` wo sinnvoll
+- [ ] Trash-basiertes Löschen statt `rm -rf` wo sinnvoll (remove-apps.sh macht das bereits)
 
 ## Phase 4 – Automatisierung
 - [ ] `config/launchd/` – Plist-Templates für tägliche/wöchentliche Jobs

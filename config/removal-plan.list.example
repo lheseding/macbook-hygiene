@@ -1,0 +1,19 @@
+# Vorlage: config/removal-plan.list.example
+# Kopieren nach config/removal-plan.local.list (ist gitignored!) und anpassen.
+#
+# Format:
+#   /Pfad/zu/App.app                  → App/Bündel in den Papierkorb
+#   $HOME/Library/...                 → User-Daten (wird expandiert)
+#   AGENT:com.example.foo.plist       → User-LaunchAgent entladen + löschen
+#   SAGENT:/Library/LaunchDaemons/... → System-Agent/Daemon (sudo nötig)
+#   SUDO:/Library/...                 → Systempfad (sudo nötig)
+#   Alles hinter # gilt als Kommentar.
+#
+# Sicherheitsregeln:
+# - Nur Pfade eintragen, die du zuordnen kannst.
+# - Nie blind ~/Library komplett oder Systemverzeichnisse anfassen.
+# - Zuerst Dry-Run prüfen, dann --execute, dann Papierkorb leeren.
+
+# --- Beispiel-Apps ---
+# /Applications/Beispiel.app
+# $HOME/Library/Application Support/Beispielhersteller
