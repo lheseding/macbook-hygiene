@@ -5,7 +5,9 @@
 - [x] README mit Projektziel und Leitlinien
 - [x] `.gitignore` (macOS, Editor, Projekt-Logs)
 
-## Phase 2 – Health-Check (nur lesen, nichts verändern)
+## Phase 2 – Health-Check (nur lesen, nichts verändern) – **Befund 24.11.2026**
+- Befund: Disk 99 % voll (2,4 GB frei von 228 GB), 8 GB RAM mit ~4,5 GB Swap → Speicherdruck ist der Performance-Killer Nr. 1.
+- [x] Erste Bestandsaufnahme manuell (Ergebnisse in `reports/`)
 - [ ] `scripts/check-disk.sh` – Speicherplatz, größte Verzeichnisse/APFS-Snapshots
 - [ ] `scripts/check-updates.sh` – macOS- & App-Updates, restart-pending
 - [ ] `scripts/check-backup.sh` – Time-Machine-Status & Alter des letzten Backups
